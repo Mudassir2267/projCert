@@ -1,3 +1,3 @@
 FROM php:7.4-cli
-COPY . /usr/src/my-app
-WORKDIR /usr/src/my-app
+COPY . /var/lib/jenkins/workspace/Build-PHP/my-app
+WORKDIR /var/lib/jenkins/workspace/Build-PHP/my-app
