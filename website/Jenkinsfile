@@ -1,8 +1,17 @@
 pipeline {
 
 	agent any
+	
 
   stages {
+	 stage('cd to website') {
+
+      steps {
+
+      	sh 'cd website'
+
+      } 
+  } 
          stage('Docker Build') {
 
       steps {
