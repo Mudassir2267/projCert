@@ -24,7 +24,7 @@ pipeline {
 
       steps {
 
-      	sh 'docker run -it -P website '
+      	sh 'docker run -i -P website '
 
       } 
   }
