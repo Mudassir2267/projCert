@@ -1,5 +1,7 @@
-FROM tomcat
+FROM php:7.4-cli
+
 COPY . /var/lib/jenkins/workspace/Build-PHP/my-app
+
 WORKDIR /var/lib/jenkins/workspace/Build-PHP/my-app
-EXPOSE 8080
-CMD /usr/local/tomcat/bin/catalina.sh run
+
+CMD [ "php", "./index.php" ]
